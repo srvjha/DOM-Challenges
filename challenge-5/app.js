@@ -31,12 +31,13 @@ const slide = document.getElementById("autoPlayButton");
 const timer = document.getElementById("timerDisplay")
 let i = 0;
 
+
 function carosuelGallery(index){
    //console.log(index)
     //const imageToAdd = document.createElement("img");
     imageToAdd.src = images[index].url
    // console.log(imageToAdd)
-    imageToAdd.classList.add("carousel-slide")
+    imageToAdd.classList.add("carousel-slide");
     caption.innerText = images[index].caption;
     carosuel.appendChild(imageToAdd)  
 
@@ -54,14 +55,11 @@ function carosuelGallery(index){
    
   })
   
-
-
 carosuelGallery(i)
 
 
 
 previousBtn.addEventListener("click",()=>{
-  //console.log("clicked ",i,images.length)
   if(i>0){  
     i--;  
    
@@ -82,22 +80,21 @@ previousBtn.addEventListener("click",()=>{
     })
   }
 })
+
 nextBtn.addEventListener("click",()=>{
   if(i < images.length - 1){ 
     i++; 
-    
     carosuelGallery(i);
     const getIndicators = document.querySelectorAll(".indi");
     getIndicators.forEach((indi,index)=>{
       if(index === i) indi.classList.add("active")
         else indi.classList.remove("active")
     })
-     
+    carouselTrack.style.transform = `translateX(-${(i - 1) * 100}%)`;
+
   }
-  else {
-   
-    i = images.length-1 - i
-  
+  else {   
+    i = images.length-1 - i  
     carosuelGallery(i)
     const getIndicators = document.querySelectorAll(".indi");
     getIndicators.forEach((indi,index)=>{
