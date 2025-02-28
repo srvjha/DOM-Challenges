@@ -54,7 +54,15 @@ function updateCart(){
    decrementQuantity.innerText = "-";
 
    const individualCartTotalPrice = document.createElement("div");
-   individualCartTotalPrice.innerText = (cartItem.price * cartItem.quantity).toFixed(2);
+   individualCartTotalPrice.innerText = `$${(cartItem.price * cartItem.quantity).toFixed(2)}`;
+
+   const removeBtn = document.createElement("div");
+    removeBtn.innerText = "Remove";
+    removeBtn.className = "remove-btn";
+    removeBtn.addEventListener("click", () => {
+        allCartItems.splice(index, 1);
+        updateCart();
+    });
 
    incrementQuantity.addEventListener("click", () => {
        cartItem.quantity++;
@@ -73,7 +81,10 @@ function updateCart(){
    cartComponent.appendChild(incrementQuantity);
    cartComponent.appendChild(cartQuantity);
    cartComponent.appendChild(decrementQuantity);
+   
    cartComponent.appendChild(individualCartTotalPrice);
+   cartComponent.appendChild(removeBtn);
+
 
    cart.appendChild(itemName);
    cart.appendChild(cartComponent);

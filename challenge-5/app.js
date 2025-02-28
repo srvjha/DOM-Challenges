@@ -90,7 +90,7 @@ nextBtn.addEventListener("click",()=>{
       if(index === i) indi.classList.add("active")
         else indi.classList.remove("active")
     })
-    carouselTrack.style.transform = `translateX(-${(i - 1) * 100}%)`;
+    // carouselTrack.style.transform = `translateX(-${(i - 1) * 100}%)`;
 
   }
   else {   

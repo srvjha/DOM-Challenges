@@ -76,6 +76,24 @@ body {
    margin-top: -4px;
 }
 
+.remove-btn{
+  background-color: black;
+  color:white;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-top: -8px;
+  padding: 3px 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  
+
+}
+
 .quantity-controls {
   display: flex;
   align-items: center;

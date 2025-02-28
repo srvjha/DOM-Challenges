@@ -1,67 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS DOM Challenges</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <main class="main">
-      <h1 class="heading">Chai Aur Code</h1>
-      <h2>JS DOM Challenges</h2>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS DOM Challenges</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body class="dark-mode">
+  <nav class="navbar">
+    <div class="logo">DOM Challenges</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Challenges</a>
+      <a href="#">About</a>
+    </div>
+    <button id="darkModeToggle">🌙</button>
+  </nav>
 
-      <div class="btns">
-        <div class="btn-group">
-          <a href="./challenge-1/index.html">Light Bulb Toggle 💡 🌚</a>
-          <a
-            href="https://vimeo.com/1058105858"
-            target="_blank"
-            class="demo-link"
-            >Watch Demo 🎥</a
-          >
-        </div>
+  <main class="main">
+    <h1 class="heading">JS DOM Challenges</h1>
+    <div class="cards-container">
+      <div class="card"><h3>Light Bulb Toggle 💡</h3><p>Toggle a light bulb on and off using JavaScript.</p><div class="card-buttons"><a href="./challenge-1/index.html" class="live-btn">Live Demo</a><a href="https://github.com/srvjha/DOM-Challenges/tree/main/challenge-1" target="_blank" class="source-btn">Source Code</a></div></div>
+      <div class="card"><h3>Change Text Colour 🦎</h3><p>Click a button to change the text color dynamically.</p><div class="card-buttons"><a href="./challenge-2/index.html" class="live-btn">Live Demo</a><a href="https://github.com/srvjha/DOM-Challenges/tree/main/challenge-2"  target="_blank" class="source-btn">Source Code</a></div></div>
+      <div class="card"><h3>Real-time Form Input Display 📋</h3><p>Display form input in real-time as users type.</p><div class="card-buttons"><a href="./challenge-3/index.html" class="live-btn">Live Demo</a><a href="https://github.com/srvjha/DOM-Challenges/tree/main/challenge-3" target="_blank" class="source-btn">Source Code</a></div></div>
+      <div class="card"><h3>Task Management 🧏🏻‍♂️</h3><p>Create and manage tasks dynamically.</p><div class="card-buttons"><a href="./challenge-4/index.html" class="live-btn">Live Demo</a><a href="https://github.com/srvjha/DOM-Challenges/tree/main/challenge-4" target="_blank" class="source-btn">Source Code</a></div></div>
+      <div class="card"><h3>Image Carousel Application 🖼️</h3><p>Swipe through images in an interactive carousel.</p><div class="card-buttons"><a href="./challenge-5/index.html" class="live-btn">Live Demo</a><a href="https://github.com/srvjha/DOM-Challenges/tree/main/challenge-5" target="_blank" class="source-btn">Source Code</a></div></div>
+      <div class="card"><h3>Enhanced Clock ⏰</h3><p>A live clock displaying the current time.</p><div class="card-buttons"><a href="./challenge-6/index.html" class="live-btn">Live Demo</a><a href="https://github.com/srvjha/DOM-Challenges/tree/main/challenge-6" target="_blank" class="source-btn">Source Code</a></div></div>
+      <div class="card"><h3>Accordion 🪗</h3><p>Expandable and collapsible content sections.</p><div class="card-buttons"><a href="./challenge-7/index.html" class="live-btn">Live Demo</a><a href="https://github.com/srvjha/DOM-Challenges/tree/main/challenge-7" target="_blank" class="source-btn">Source Code</a></div></div>
+      <div class="card"><h3>Simple Shopping Cart 🛒</h3><p>Add and remove items dynamically from a cart.</p><div class="card-buttons"><a href="./challenge-8/index.html" class="live-btn">Live Demo</a><a href="https://github.com/srvjha/DOM-Challenges/tree/main/challenge-8" target="_blank" class="source-btn">Source Code</a></div></div>
+      <div class="card"><h3>Sliding Menu 🪟</h3><p>A sidebar menu that smoothly slides in and out.</p><div class="card-buttons"><a href="./challenge-9/index.html" class="live-btn">Live Demo</a><a href="https://github.com/srvjha/DOM-Challenges/tree/main/challenge-9" target="_blank" class="source-btn">Source Code</a></div></div>
+      <div class="card"><h3>Interactive Memory Card Game 🂫</h3><p>Test your memory with a fun card-matching game.</p><div class="card-buttons"><a href="./challenge-10/index.html" class="live-btn">Live Demo</a><a href="https://github.com/srvjha/DOM-Challenges/tree/main/challenge-10" target="_blank" class="source-btn">Source Code</a></div></div>
+    </div>
+  </main>
 
-        <div class="btn-group">
-          <a href="./challenge-2/index.html">Change Text Colour 🦎</a>
-          <a
-            href="https://vimeo.com/1058105879"
-            target="_blank"
-            class="demo-link"
-            >Watch Demo 🎥</a
-          >
-        </div>
-
-        <div class="btn-group">
-          <a href="./challenge-3/index.html">Real-time Form Input Display 📋</a>
-          <a
-            href="https://vimeo.com/1058105893"
-            target="_blank"
-            class="demo-link"
-            >Watch Demo 🎥</a
-          >
-        </div>
-
-        <div class="btn-group">
-          <a href="./challenge-4/index.html">Task Management 🧏🏻‍♂️</a>
-          <a
-            href="https://vimeo.com/1058105921"
-            target="_blank"
-            class="demo-link"
-            >Watch Demo 🎥</a
-          >
-        </div>
-
-        <div class="btn-group">
-          <a href="./challenge-5/index.html">Image Carousel Application 🖼️</a>
-          <a
-            href="https://vimeo.com/1058105933"
-            target="_blank"
-            class="demo-link"
-            >Watch Demo 🎥</a
-          >
-        </div>
-      </div>
-    </main>
-  </body>
+  <footer class="footer">
+    <p style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">© 2025 Js DOM Challenges</p>
+    <div class="social-icons">
+      <a href="https://github.com/" target="_blank"><img src="images/github.png" alt="GitHub"></a>
+      <a href="https://twitter.com/" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="https://linkedin.com/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn"></a>
+    </div>
+  </footer>
+</body>
 </html>
