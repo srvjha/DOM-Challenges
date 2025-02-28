@@ -117,6 +117,7 @@ function callTimer(time){
     else 
     {
       clearInterval(interval)
+      timer.innerText= ``
    
      if(i<images.length-1){
       nextBtn.click()
