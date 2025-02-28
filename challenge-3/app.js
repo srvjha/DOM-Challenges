@@ -26,7 +26,7 @@ const displayBio = document.getElementById("bioDisplay");
     }
  })
  age.addEventListener("input",()=>{
-    if(age.value.length > 0){
+    if(Number(age.value) >= 18 && Number(age.value) <=120){
         displayAge.innerText = age.value
     }
     else {
